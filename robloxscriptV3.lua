@@ -7,3 +7,12 @@ for number = 10, 1, 1 do -- "10" = it will repeat ten times equals
 	
 	task.wait(0.5) --basically will wait 0.5 seconds {taskwait is way faster ig}, 
 end
+------------------------------------------------------------------------------------------------------------
+for i, v in pairs:GetService("Players"):GetPlayers() do
+	
+	v.CharacterAdded:Connect(function(char)
+	v.Character:Destroy()
+	end)
+	
+end
+-------------------------------------------------------------------------------------------------------------------
